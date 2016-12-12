@@ -1,51 +1,165 @@
 <html>
+  <!-- This code is an initial practice of HTML-->
+  
+  <!-- Breaking html doc into initial branches head and body -->
+  
   <head>
+  
+    <!-- Providing title that will be displayed on the browser tab -->
     <title>HTML Practice</title>
-    <meta http-equiv = "refresh" content = "30"> <!-- Tells the html how soon to refresh. 30 is 30 seconds -->
-    <meta name = "keywords" content = "HTML, Practice, Fazeel" > <!-- Defines keywords for the html -->
-    <meta name = "author" content = "Syed Fazeel Ahmed"> 
-    <meta charset = "ISO-8859-1"/> <!-- Defines character set to use (fonts set to use) -->
-    <meta name = "Description" content = "This is a practice html by Syed Fazeel Ahmed">
     
-    <link rel = "stylesheets" href = "http://www.r-datacollection.com/materials/ch-2-html/htmlresources/awesomestyle.css" type = "text/css" /> <!-- Adds a stylesheet for the html -->
-    <link rel = "icon" href = "https://lh3.googleusercontent.com/gYGKfg0dvNQm327kZf97Y2hKqPW8jHaQDEYfjyr59OcHF2aQqqb6bIpkKVdTGSYqy5kqUblrZqJ7dWmdtQ" type= "image/x-icon" /> <!-- Adds an icon to the html -->
+    <!-- Providing meta information for the html -->
+    
+    <!--<meta http-equiv = "refresh" content = "30">-->                    <!-- Tells the html how soon to refresh. 30 is 30 seconds-->
+    
+    <meta name = "keywords" content = "HTML, Practice, Fazeel" >                          <!-- Defines keywords for the html, which will be searchable-->
+    <meta name = "author" content = "Syed Fazeel Ahmed">                                  <!-- Defining author's name-->
+    <meta name = "description" content = "This is a practice html by Syed Fazeel Ahmed">  <!-- Defines a description for the html-->
+    
+    <meta charset = "ISO-8859-1"/>                                  <!-- Defines character set to use (fonts set to use)-->
+    
+    
+    <link rel = "stylesheets" href = "http://www.r-datacollection.com/materials/html/htmlresources/awesomestyle.css" type = "text/css" />
+    <!-- The link command lets us link to an external document. In this case a stylesheet-->
+    <link rel = "icon" href = "http://www.r-datacollection.com/materials/html/htmlresources/key.ico" type= "image/x-icon" />
+    <!-- Adds an icon that will be displayed on the browser tab-->
+    
+    <style type="text/css"> 
+        p.over {background-color:blue;color:white;font-family:"Verdana";font-size:150%}
+        p.out  {font-family:"Gill Sans MT";font-size:150%}
+    </style>
+    <!--The style argument here uses a CSS script. It defines two types of font styles we can use in the body of the html-->
+  
   </head>
   
   <body>
-    <!-- This code is an initial practice of HTML. This is how to encode comments within a code-->
     
-    Anything written in the body will be displayed by the browser.
+    <h1>HTML Practice by Syed Fazeel Ahmed</h1>                                   <!--Creating a main heading--> 
     
-    <a href = "https://github.com/fazeelahmedsyed"> Link to github </a> <!-- attributes enable you to add an object to a tag. Here the tag is a and href is an attribute containing a link. a itself is text in the body of the html -->
+    I am constructing this HTML to have a basic understanding of html.            <!--Writing some text-->
     
-    <p> 5 &lt; 6 but 7 &gt; 3 </p> <!-- special characters that you wish to use but are part of html syntax can be written using special character entities. All character entities start from '&' and end on ';'. -->
+    <br><br>                                                                      <!-- Syntax used for a line break is <br>-->
     
-    Testing some text <br> Testing some text here as well. <!-- Syntax used for a line break is <br> -->
-    <br>
-    a     a <!-- is displayed with one space. To eradicate this we use character entity &nbsp; -->
-    <br>
-    a&nbsp;&nbsp;&nbsp;&nbsp;a <!-- Wuala -->
-    <br>
-    
-    <a href = "www.r-datacollection.com/bookmaterials">  Link to materials </a> <!-- This is an anchor. It allows HTML to allow linking to other documents -->
-      
-    <a id = "materials"> This is a reference point for materials </a> <!-- This is a reference tag, that gives an id to any tag that can be called later -->
-      
+    <a href = "https://github.com/fazeelahmedsyed"> My Github Profile </a>        <!-- Attributes enable you to add an object to a tag. Here the tag is a and href is an attribute containing a link. a itself is text in the body of the html -->
     <br><br>
     
-    <a href = "https://en.wikipedia.org/wiki/Nawaz_Sharif#top"> This link takes to an id on another linked document </a>
+      <h2>Some Learning regarding Text</h2>                                       <!-- Creating Subheading -->                               
+      These are practices involving text elements.
+    
+        <h3>Learning Special Characters</h3>
+        <a> 5 &lt; 6 but 7 &gt; 3</a><br>                                         <!-- Special characters that you wish to use but are part of html syntax can be written using special character entities. All character entities start from '&' and end on ';'. -->
+    
+        <h3>Learning Spaces</h3>
+              a     a<br>                                                         <!-- is displayed with one space. To eradicate this we use character entity &nbsp;-->
+        a&nbsp;&nbsp;&nbsp;&nbsp;a<br>                                            <!-- Wuala -->
+    
+        <h3>Learning Formatting</h3>
+        <b>This text is bold</b><br> 
+        <i>This text is italicized</i><br> 
+        <strong>This text is emphasized</strong><br>
+    
+        <h3>Learning Paragraphs</h3>
+        <h4>What to say?</h4><p> There are certain things that can be said, others cannot be. A major reason for such a distinction is the cultural norm existant within the language being used</p>
+        <p>However you say it, it doesnt matter. If it is allowed by society it is welcome. If not, then you are a perpetrator who has brought shame to the language.</p>
+        <!-- Both the paragraph tag <p> and heading tag <h4> provide one line break before and after them by default--> 
+    
+        <h3>Learning Listing</h3>
+    
+        <h4>Unordered Lists</h4>        <!--Unordered lists are bullet points and take <li> tags as bullets-->
+        Things to Say
+        <ul>
+          <li>Polite Vocabulary</li>
+          <li>Acceptable ideas</li>
+        </ul>
+        
+        <h4>Ordered Lists</h4>          <!--Ordered lists are Numbered points and take <li> tags as bullets-->
+        Things not to say
+        <ol>
+          <li>Anything that has Abusive Words</li>
+          <li>Anything against the Norms of Society</li>
+        </ol>
+        
+        <h4>Descriptive Lists</h4>      <!--Descriptive lists are points with headings and take <dt> as heading and <dd> as descriptions-->
+        Some important definitions
+        <dl>
+          <dt>Complacency</dt><dd> Complacency is an act of accepting whatever is going around oneself without question.</dd>
+          <dt>Conspiracy</dt><dd> Conspiracy is an idea that is against the norms but cannot be proven or is not proven yet.</dd>
+        </dl>
+    
+      <h2>Some Learning regarding Referencing</h2>  
+    
+        <a href = "http://www.r-datacollection.com/bookmaterials"> Materials </a>        <!-- This is an anchor. It allows HTML to allow linking to other documents-->
+    
+        <a id = "materials"> (Other files) </a><br><br>                           <!-- This is a reference tag, that gives an id to any tag that can be called later-->    
+    
+        <a href = "https://en.wikipedia.org/wiki/Nawaz_Sharif#top"> Prime Minister of Pakistan</a><br><br>
+        <!-- This anchor references to a tag in another document-->
+    
+      <h2>Some Learning regarding Grouping</h2>
+    
+      <div style = "color:red;font-family:'Courier New';font-size:90%"><a> There are alot of conspiracies around the world.</a><br></div>
+      <!--The div argument groups tags into a class by defining a class attribute. Each class can have a different formatting style as specified in a Stylesheet.Alternatively div can also be used to give a format to a tag manually.--> 
+      <a>However there are only some that are <span style= "color:purple;font-size:200%">actually</span>plausible.</a></div>
+      <!--The span argument groups in-line text into a class. It can also be used to manually define a font to one part of a tag.-->
+    
+      <h2>Some Learning regarding Forms</h2>
+      <form name= "Name" method="post" action="http://www.askideas.com/media/73/You-Are-A-Loser-Picture.jpg">
+      <!-- Here name is only for internal reference; method= "get" when data entered is to be used on resulting page, "post" otherwise; action tells html what to do after the form is completed--> 
+        <span style = "font-family:'Gill Sans MT'">Tell me about your hobbies and I will tell you about you.</span> <br><br>
+        
+        <select>                                                                  <!--Select is a data collector that takes input from a drop down list-->
+          <option> Playing a musical instrument</option>                          <!--option defines the options available for a select input-->
+          <option> Playing a sport </option>
+          <option> Writing </option>
+          <option> Other </option>
+        </select>
+        <br><br>
+        <span style = "font-family:'Gill Sans MT'">Tell me more details about your hobby</span> <br>
+        <textarea name="desc"></textarea><br><br>
+        <!--textarea is a type of data collector that collects text-->
+        
+        <span style = "font-family:'Gill Sans MT'">Tell me your name now and I'll tell you who you are</span> <br>
+        <input name="Name" type="text" value="">
+        <!-- Input Collects single item input, input type can be 'text'(text field),'submit'(submit button),'hidden'(hidden),'reset'(resets page),'color','checkbox','date','range'-->
+        
+        <input type="submit" value="Tell me who I am">
+        
+      </form>
+      <br>
+      
+      <h2> Some Learning regarding Scripts</h2>
+      
+      <div style="font-family:'Gill Sans MT'"><a>Printing the Current Date and Time</a></div><br>
+      <script> document.write(Date()); </script> <!--Wont work on a non javascript editor-->
+      <!-- This script writes a javascript code to print current date and time-->
+      
+      <div style="font-family:'Gill Sans MT'"><a>Why are you using the following browser?</a></div><br>
+      <script src = "http://www.r-datacollection.com/materials/ch-2-html/htmlresources/browserdetect.js"></script>
+      <script> document.write(BrowserDetect.browser);</script>
+      <!-- This script calls a webpage which is a collection of different javascript functions and uses one of these functions-->
+      
+      <p onmouseover= "this.className= 'over'" onmouseout = "this.className='out'">Hover over me</p>
+      <!-- This script calls on javascript/css only if an event occurs -->
+      
+      <h2>Some Learning regarding Tables</h2><br><br>
+      
+      <div style="font-family:'Gill Sans MT'">
+      <table>
+        <tr> <th> No.</th><th>Name</th><th>Marks</th></tr>
+        <tr><th></th><th></th><th>(out of 100)</th></tr>
+        <tr><td>1</td><td>Fazeel Ahmed</td><td>79</td></tr>
+        <tr><td>2</td><td>Osama Aslam</td><td>92</td></tr>
+        <tr><td>3</td><td>Ahsan Shaikh</td><td>85</td></tr>
+        <tr><td>4</td><td>Khalid Buttr</td><td>27</td></tr>
+        <tr><td>5</td><td>Anas Shaikh</td><td>72</td></tr>  
+        
+      </table></div>
+      <!-- For a table, Each line commences giving a <tr> argument. <th> means the cell is a header. <td> the cell is a normal cell.-->
+    
     
     <br><br>
+    <a href = "#materials"> Want Other files for ADCR? Click here </a> 
     
-    <!-- Meta Tags are used to define metadata for the html document -->
-    
-    <!-- Meta are generally defined in the head argument -->
-    <br> <br>
-    <a href = "#materials"> This is a link to the id 'materials' </a> 
-      
-    
-      
-  	
   </body>
   
   
