@@ -1,0 +1,42 @@
+A few points on XML:
+
+1. An XML document must have a root element.
+
+2. All elements must have a start tag and be closed, except for the declaration, which is
+not part of the actual XML document.
+
+3. XML elements must be properly nested.
+
+4. XML attribute values must be quoted.
+
+5. Tags are named with characters and numbers, but may not start with a number or
+“xml.”
+
+6. Tag names may not contain spaces and are case sensitive.
+
+7. Space characters are preserved.
+
+8. Some characters are illegal and have to be replaced by meta characters.
+
+9. Comments can be included as follows: <!-- comment -->.
+
+10. Content can be excluded from parsing using: <![CDATA[...]]>.
+
+11. There are schema defining languages within a XML, such as Document Type Definitions (DTD)
+, XML Schema (XSD), etc. These languages are used to define the control syntax of an XML doc.
+
+12. When utilizing multiple XML extensions we may come accross elements with same tag names.
+In such a scenario we use namespaces. Namespaces make every tag unique. Example below:
+
+<root xmlns:h="http://www.w3.org/1999/xhtml"
+xmlns:t="http://funnybooknames.com/crockford">
+	<h:head>
+		<h:title>Basic HTML Sample Page</h:title>
+	</h:head>
+	<t:book id="1">
+		<t:author>Douglas Crockford</t:author>
+		<t:title>JavaScript: The Good Parts</t:title>
+	</t:book>
+</root>
+
+13.  
